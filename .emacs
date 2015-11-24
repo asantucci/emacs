@@ -82,8 +82,9 @@
 (nyan-mode 1)
 
 ;; R and ESS
-;;(load "ess-site")
 (require 'ess-site)
+(require 'r-settings)
+
 
 ;---------------------------------------------------------------------
 ;; Put auto 'custom' changes in a separate file (this is stuff like
