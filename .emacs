@@ -1,5 +1,6 @@
 ;; path where settings files are kept
 (add-to-list 'load-path "~/.emacs.d/settings")
+(add-to-list 'load-path "~/.emacs.d/ess/lisp")
 ;; path to where plugins are kept
 (setq plugin-path "~/.emacs.d/el-get/")
 
@@ -18,7 +19,7 @@
 
 ;; Git
 (include-plugin "magit")
-(require 'magit)
+;;(require 'magit)
 
 ;; Popup
 (include-elget-plugin "popup")
@@ -80,10 +81,13 @@
 ;; Nyancat mode!
 (nyan-mode 1)
 
+;; R and ESS
+;;(load "ess-site")
+(require 'ess-site)
 
 ;---------------------------------------------------------------------
 ;; Put auto 'custom' changes in a separate file (this is stuff like
 ;; custom-set-faces and custom-set-variables)
 (load 
- (setq custom-file (expand-file-name "settings/custom.el" user-emacs-directory))
- 'noerror)
+(setq custom-file (expand-file-name "settings/custom.el" user-emacs-directory))
+'noerror)
