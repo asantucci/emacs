@@ -18,10 +18,10 @@
                auto-complete
                color-theme-solarized
                ein
-               magit
+;;               magit
                markdown-mode
-               matlab-mode
-               nxhtml
+;;               matlab-mode
+;;               nxhtml
                pydoc-info
                scss-mode
                popup
@@ -32,7 +32,7 @@
                js2-mode
                yasnippet
                yaml-mode
-               ))   
+               ))
 
 ; first enable shallow clone, so we don't need to clone the entire
 ; history of every project
