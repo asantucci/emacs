@@ -60,6 +60,18 @@
 (add-hook 'LaTeX-mode-hook 'flyspell-mode t)
 (add-hook 'text-mode-hook 'flyspell-mode)
 
+;; Don't apply spell-checking within knitr chunks. Used in knitr/rnw's.
+(defun flyspell-eligible ()
+  (let ((p (point)))
+    (save-excursion
+      (cond ((re-search-backward (ispell-begin-skip-region-regexp) nil t)
+             (ispell-skip-region (match-string-no-properties 0))
+             (< (point) p))
+            (t)))))
+(put 'latex-mode 'flyspell-mode-predicate 'flyspell-eligible)
+(add-to-list 'ispell-skip-region-alist '("^<<.*>>=" . "^ <at> "))
+
+
 ;; Use line wrapping
 (add-hook 'LaTeX-mode-hook 'longlines-auto-wrap 1)
 
