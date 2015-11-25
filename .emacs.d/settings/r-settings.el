@@ -7,7 +7,6 @@
 ;;(load "C:/Program Files/emacs/GNU Emacs 24.1/site-lisp/ess/ess-site")
 ;;(load "C:/Program Files/emacs/GNU Emacs 24.1/lisp/ess-R-object-tooltip")
 
-
 ;;R stuff
 (setq ess-eval-visibly-p nil)
 (setq ess-ask-for-ess-directory nil)
@@ -50,15 +49,15 @@
 
 
 ;; Define the keybinding you want
-(defun my-inferior-ess-mode-hook ()
-  (local-set-key (kbd "<home>") 'comint-bol)
-  (local-set-key "\C-d" 'comint-kill-input)
-;  (local-set-key "\C-c \C-l" 'ess-eval-line-and-step)
-;  (local-set-key "\C-d \M-l" 'ess-eval-line-and-go)
-)
+;; (defun my-inferior-ess-mode-hook ()
+;;   (local-set-key (kbd "<home>") 'comint-bol)
+;;   (local-set-key "\C-d" 'comint-kill-input)
+;; ;  (local-set-key "\C-c \C-l" 'ess-eval-line-and-step)
+;; ;  (local-set-key "\C-d \M-l" 'ess-eval-line-and-go)
+;; )
 
 ;; add the key-binding to the hook that gets called whenever you start an R session:
-(add-hook 'inferior-ess-mode-hook 'my-inferior-ess-mode-hook)
+;; (add-hook 'inferior-ess-mode-hook 'my-inferior-ess-mode-hook)
 
 ;; Lastly, load time---shows that full .emacs was loaded
 (setq display-time-day-and-date t) ;; Show date with time
