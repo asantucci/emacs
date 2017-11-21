@@ -33,3 +33,5 @@ We must install the following version-control systems: `hg`, `git`, `bzr`, and `
 
 I encountered errors automatically installing Auctex, and followed instructions [https://github.com/jhamrick/emacs/blob/master/README.md#trouble-building-auctex](here) to work around the issue; see section on 
 
+# Other useful tips
+`C-h m` can be used within a buffer to get help on the current mode. See [https://emacs.stackexchange.com/questions/18082/how-do-i-get-the-current-major-mode/18083?newreg=4705c7c853a749d988de016ff2adc1bb](here).
