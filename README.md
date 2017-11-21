@@ -31,3 +31,5 @@ Ubuntu currently (December, 2015) supports emacs 23. For some of the plug-in's t
 
 We must install the following version-control systems: `hg`, `git`, `bzr`, and `cvs`.
 
+I encountered errors automatically installing Auctex, and followed instructions [https://github.com/jhamrick/emacs/blob/master/README.md#trouble-building-auctex](here) to work around the issue; see section on 
+
