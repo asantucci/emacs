@@ -24,6 +24,7 @@
  python-shell-completion-string-code
    "';'.join(get_ipython().Completer.all_completions('''%s'''))\n")
 
+(setq python-shell-interpreter "python3")
 
 ;; -----------------------------
 ;; emacs IPython notebook config
